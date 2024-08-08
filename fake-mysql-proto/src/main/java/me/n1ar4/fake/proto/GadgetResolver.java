@@ -120,7 +120,7 @@ public class GadgetResolver implements Resolver {
 
             outputStream.write(Objects.requireNonNull(PacketHelper.buildPacket(6,
                     ColumnPacket.buildColumnValuesPacket(
-                            new byte[][]{"111".getBytes(), data, "222".getBytes()}
+                            new byte[][]{"111".getBytes(), data, data}
                     ))));
             outputStream.flush();
 
